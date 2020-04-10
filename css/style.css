@@ -9,6 +9,7 @@
 
 body {
   font-family: Panton Regular;
+  position: relative;
 }
 
 .contaner {
@@ -639,6 +640,7 @@ body {
 .contaner .main .bestseller .cards .card {
   width: 100%;
   height: 450px;
+  background-color: #fff;
   -webkit-box-shadow: 0px 9px 10.5px 0 #ebebeb;
           box-shadow: 0px 9px 10.5px 0 #ebebeb;
   border: solid 0.5px #efefef;
@@ -825,6 +827,208 @@ body {
   border: solid 0.5px #efefef;
 }
 
+.last-news {
+  height: 588px;
+  width: 100px;
+  width: 100%;
+}
+
+.last-news .last-news-cards {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.last-news .last-news-cards .last-new-card {
+  width: 31.57895%;
+  height: 431px;
+  background-color: #fff;
+  margin: 15px;
+  -webkit-box-shadow: 0 15px 15px 1px #e4e4e47d;
+          box-shadow: 0 15px 15px 1px #e4e4e47d;
+}
+
+.last-news .last-news-cards .last-new-card .new-card-img {
+  width: 100%;
+  height: 209px;
+}
+
+.last-news .last-news-cards .last-new-card .new-card-img img {
+  background-size: cover;
+  width: 100%;
+}
+
+.last-news .last-news-cards .new-card-body {
+  width: 100%;
+  height: 222px;
+}
+
+.last-news .last-news-cards .last-new-card.first {
+  margin-left: 0;
+}
+
+.subscription {
+  height: 160px;
+  position: relative;
+  margin-bottom: 41px;
+}
+
+.subscription h3.sub {
+  margin-top: 35px;
+  margin-bottom: 34px;
+  text-align: center;
+  font-family: Panton Bold;
+  font-size: 24px;
+  color: #1d1e1e;
+}
+
+.subscription form .input-subscription {
+  width: 860px;
+  height: 58px;
+  border: none;
+  margin-right: 0;
+  border-radius: 3px 0 0 3px;
+  padding: 22px 32px 22px 32px;
+  font-family: Panton SemiBold;
+  font-size: 18px;
+}
+
+.subscription form .input-button {
+  width: 262px;
+  height: 58px;
+  border: none;
+  margin-left: -7px;
+  border-radius: 0 3px 3px 0;
+  background: linear-gradient(-45deg, #0187c1, #3ac0ef);
+  -webkit-border-radius: 0 3px 3px 0 0;
+  -moz-border-radius: 0 3px 3px 0 0;
+  -ms-border-radius: 0 3px 3px 0 0;
+  -o-border-radius: 0 3px 3px 0 0;
+  margin-top: 2px;
+  font-family: Panton Bold;
+  font-size: 16px;
+  letter-spacing: calc(16px*200/1000);
+  color: #fff;
+}
+
+.footer-sale {
+  height: 335px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.footer-sale .footer-card-sale {
+  width: 50%;
+  height: 279px;
+  background: linear-gradient(45deg, #0187c1, #3ac0ef);
+  margin: 15px;
+  -webkit-box-shadow: 0px 40px 30.5px -35px #8d8d8d;
+          box-shadow: 0px 40px 30.5px -35px #8d8d8d;
+  position: relative;
+}
+
+.footer-sale .footer-card-sale .footer-card-img {
+  position: absolute;
+  bottom: -20px;
+  right: 20px;
+}
+
+.footer-sale .footer-card-sale .footer-card-text {
+  width: 70.17544%;
+  margin: 26px 15px 0 24px;
+}
+
+.footer-sale .footer-card-sale .footer-card-text .text-header {
+  font-family: Panton Bold;
+  font-size: 20px;
+  color: #fff;
+  letter-spacing: calc((20*25)/1000);
+  margin-bottom: 10px;
+}
+
+.footer-sale .footer-card-sale .footer-card-text .text-title {
+  font-size: 11px;
+  font-family: Panton SemiBold;
+  line-height: 1.36;
+  text-transform: uppercase;
+  letter-spacing: calc((50*14px)/1000);
+  text-align: left;
+  color: #4bd1fe;
+  margin-bottom: 14px;
+}
+
+.footer-sale .footer-card-sale .footer-card-text .text-button {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #000;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.footer-sale .footer-card-sale .footer-card-text .text-button .text-button-link {
+  display: inline-block;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  line-height: 25px;
+  text-decoration: none;
+  font-family: Panton Bold;
+  font-size: 16px;
+  letter-spacing: calc((200*16px)/1000);
+}
+
+.footer-sale .footer-card-sale.first {
+  margin-left: 0px;
+}
+
+.about {
+  width: 100%;
+  margin: 0 auto;
+  padding: 85px 0;
+  height: 600px;
+}
+
+.about .about-us {
+  color: #1d1e1e;
+  font-family: Panton ExtraBold;
+  font-size: 36px;
+  letter-spacing: calc(36px*0/1000);
+  margin-bottom: 60px;
+}
+
+.about .collumn {
+  -webkit-column-width: calc(555/1100*100%);
+          column-width: calc(555/1100*100%);
+  -webkit-column-count: 2;
+          column-count: 2;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.about .collumn p {
+  color: #1d1e1e;
+  font-family: Panton SemiBold;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: calc(14px*25/1000);
+  margin-bottom: 35px;
+}
+
 .footer {
   height: 441px;
   background-color: #1d1e1e;
@@ -957,5 +1161,15 @@ body {
 .footer .footer-contaner .contacts p a {
   color: #4cd2fe;
   text-transform: lowercase;
+}
+
+.background {
+  position: absolute;
+  bottom: 0px;
+  right: -377px;
+  height: 435px;
+  width: 1920px;
+  background-color: #efefef;
+  z-index: -10;
 }
 /*# sourceMappingURL=style.css.map */

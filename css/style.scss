@@ -22,6 +22,7 @@ $colorTextFooter: #6d6d6d;
 
 body {
     font-family: Panton Regular;
+    position: relative;
 }
 
 .contaner {
@@ -601,6 +602,7 @@ body {
                 .card {
                     width: 100%;
                     height: $heightCard;
+                    background-color: #fff;
                     box-shadow: 0px 9px 10.5px 0 #ebebeb;
                     border: solid 0.5px #efefef;
                     float: left;
@@ -806,6 +808,210 @@ body {
 
 }
 
+.last-news {
+    height: 588px;
+    width: 100px;
+    width: 100%;
+
+    .last-news-cards {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+
+        .last-new-card {
+            width: percentage(360/1140);
+            height: 431px;
+            background-color: #fff;
+            margin: 15px;
+            border-radius: 3px;
+            box-shadow: 0 15px 15px 1px #e4e4e47d;
+            .new-card-img: ;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            -ms-border-radius: 3px;
+            -o-border-radius: 3px;
+
+            .new-card-img {
+                width: 100%;
+                height: 209px;
+
+                img {
+                    background-size: cover;
+                    width: 100%;
+                }
+            }
+
+            .new-card-body {
+                width: 100%;
+                height: 222px;
+                padding: 22px;
+            }
+        }
+
+        .last-new-card.first {
+            margin-left: 0;
+        }
+    }
+
+}
+
+.subscription {
+
+    height: 160px;
+    position: relative;
+    margin-bottom: 41px;
+
+    h3.sub {
+        margin-top: 35px;
+        margin-bottom: 34px;
+        text-align: center;
+        font-family: Panton Bold;
+        font-size: 24px;
+        color: #1d1e1e;
+    }
+
+    form .input-subscription {
+        width: 860px;
+        height: 58px;
+        border: none;
+        margin-right: 0;
+        border-radius: 3px 0 0 3px;
+        padding: 22px 32px 22px 32px;
+        font-family: Panton SemiBold;
+        font-size: 18px;
+
+    }
+
+    form .input-button {
+        width: 262px;
+        height: 58px;
+        border: none;
+        margin-left: -7px;
+        border-radius: 0 3px 3px 0;
+        background: linear-gradient(-45deg, #0187c1, #3ac0ef);
+        -webkit-border-radius: 0 3px 3px 0 0;
+        -moz-border-radius: 0 3px 3px 0 0;
+        -ms-border-radius: 0 3px 3px 0 0;
+        -o-border-radius: 0 3px 3px 0 0;
+        margin-top: 2px;
+        font-family: Panton Bold;
+        font-size: 16px;
+        letter-spacing: calc(16px*200/1000);
+        color: #fff;
+    }
+
+
+}
+
+.footer-sale {
+    height: 335px;
+    display: flex;
+    flex-direction: row;
+
+    .footer-card-sale {
+        width: percentage(570/1140);
+        height: 279px;
+        background: linear-gradient(45deg, #0187c1, #3ac0ef);
+        margin: 15px;
+        box-shadow: 0px 40px 30.5px -35px #8d8d8d;
+        position: relative;
+
+        .footer-card-img {
+            position: absolute;
+            bottom: -20px;
+            right: 20px;
+        }
+
+        .footer-card-text {
+            width: percentage(400/570);
+            margin: 26px 15px 0 24px;
+
+            .text-header {
+                font-family: Panton Bold;
+                font-size: 20px;
+                color: #fff;
+                letter-spacing: calc((20*25)/1000);
+                margin-bottom: 10px;
+
+            }
+
+            .text-title {
+                font-size: 11px;
+                font-family: Panton SemiBold;
+                line-height: 1.36;
+                text-transform: uppercase;
+                letter-spacing: calc((50*14px)/1000);
+                text-align: left;
+                color: #4bd1fe;
+                margin-bottom: 14px;
+            }
+
+            .text-button {
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                text-align: center;
+                background-color: #000;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+
+                .text-button-link {
+                    display: inline-block;
+                    text-align: center;
+                    height: 100%;
+                    width: 100%;
+                    color: #fff;
+                    line-height: 25px;
+                    text-decoration: none;
+                    font-family: Panton Bold;
+                    font-size: 16px;
+                    letter-spacing: calc((200*16px)/1000);
+
+                }
+            }
+
+        }
+    }
+
+    .footer-card-sale.first {
+        margin-left: 0px;
+    }
+
+}
+
+.about {
+    width: 100%;
+    margin: 0 auto;
+    padding: 85px 0;
+    height: 600px;
+
+    .about-us {
+        color: #1d1e1e;
+        font-family: Panton ExtraBold;
+        font-size: 36px;
+        letter-spacing: calc(36px*0/1000);
+        margin-bottom: 60px;
+    }
+
+    .collumn {
+        column-width: calc(555/1100*100%);
+        column-count: 2;
+        column-gap: 30px;
+        // column-rule: 1px solid #ccc;
+
+        p {
+            color: #1d1e1e;
+            font-family: Panton SemiBold;
+            font-size: 14px;
+            line-height: 1.7;
+            letter-spacing: calc(14px*25/1000);
+            margin-bottom: 35px;
+        }
+    }
+}
+
 .footer {
     height: 441px;
     background-color: $colorFooter;
@@ -926,8 +1132,9 @@ body {
             h3 {
                 margin-bottom: 30px;
             }
+
             p {
-                
+
                 margin: 18px 0;
                 font-family: Panton Bold;
                 font-size: 12px;
@@ -939,6 +1146,7 @@ body {
                 a {
                     color: $colorTextDesc;
                     text-transform: lowercase;
+
                 }
 
             }
@@ -947,4 +1155,14 @@ body {
 
     }
 
+}
+
+.background {
+    position: absolute;
+    bottom: 0px;
+    right: -377px;
+    height: 435px;
+    width: $widthSite;
+    background-color: #efefef;
+    z-index: -10;
 }
