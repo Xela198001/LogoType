@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 
-<body>
+<body onload="sale()">
     <div class="contaner">
         <div class="header">
             <div class="header-top">
@@ -45,7 +45,8 @@
                 </div>
             </div>
             <div class="header-bottom">
-                <div class="catalog"><a href="#" class="catalog-link"><i class="fas fa-bars"></i>Каталог товаров<i class="fas fa-chevron-down"></i></a></div>
+                <div class="catalog"><a href="#" class="catalog-link"><i class="fas fa-bars"></i>Каталог товаров<i
+                            class="fas fa-chevron-down"></i></a></div>
                 <div class="header-bottom-nav">
                     <ul class="header-botton-menu">
                         <li class="bottom-menu-item"><a href="#" class="bottom-menu-link">О компании</a></li>
@@ -59,7 +60,215 @@
 
             </div>
         </div>
+        <div class="main">
+            <div class="navigation">
+                <div class="nav-left">
+                    <ul class="menu">
+                        <li class="menu-item"><a href="#" class="menu-link">Катушки</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Удилища</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Приманки</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Воблеры</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Лески и шнуры</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Поплавки</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Крючки</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Аксессуары</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Одежда</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Снаряжение</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Электроника</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Зимняя рыбалка</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Другое</a></li>
+                    </ul>
+                </div>
+                <div class="slider-right">
+                    <div class="slider">
+                        <div class="slider-img"><img src="img/b631e84774d3911caa405aa6edee2798.png" alt=""></div>
+                        <div class="slider-text">
+                            <div class="text-header">Специальные предложения</div>
+                            <div class="text-title">катушка Adrenalin 7300 BC</div>
+                            <div class="text-price">5 600 р.</div>
+                            <div class="text-button">
+                                <a href="#" class="text-button-link">Купить</a>
+                            </div>
+                            <div class="text-pagination"></div>
+                        </div>
+                    </div>
+                    <div class="articles">
+                        <div class="article-one">
+                            <div class="article-img"><img src="img/rawbite.png" alt=""></div>
+                            <div class="article-text">
+                                <div class="text-header">Новые приманки</div>
+                                <div class="text-title">для подледной ловли</div>
+                                <div class="text-button">
+                                    <a href="#" class="text-button-link">></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article-two">
+                            <div class="article-img"><img src="img/catalog.png" alt=""></div>
+                            <div class="article-text">
+                                <div class="text-header">Скачайте каталог</div>
+                                <div class="text-title">для оптовиков</div>
+                                <div class="text-button">
+                                    <a href="#" class="text-button-link">></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article-three">
+                            <div class="article-img"><img src="img/experts.png" alt=""></div>
+                            <div class="article-text">
+                                <div class="text-header">Эксперты отвечают</div>
+                                <div class="text-title">на ваши вопросы</div>
+                                <div class="text-button">
+                                    <a href="#" class="text-button-link">></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="bestseller">
+                <div class="bestseller-header">
+                    <p><span>Хиты продаж</span><a href="#">весь каталог</a></p>
+                    <div>
+                        <div class="bestseller-header-button">
+                            <a href="#" class="bestseller-header-button-link"><</a> 
+                        </div> 
+                        <div class="bestseller-header-button">
+                            <a href="#" class="bestseller-header-button-link">></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card bestseller card-first">
+                        <div class="card-bestseller-img">
+                            <img src="img/katushka-balzer-shika.png" alt="">
+                        </div>
+                        <div class="card-bestseller-text">
+                            <div class="card-bestseller-text-header">
+                                Бестселлер
+                            </div>
+                            <div class="card-bestseller-text-desc">
+                                катушка Adrenalin 7300 BC
+                            </div>
+                            <div class="card-bestseller-text-price">
+                                4 800 p.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img"><img src="img/mk_detail_rollenhalter.png" alt=""></div>
+                        <div class="card-text">
+                            <div class="card-rating">*</div>
+                            <div class="card-desc">Удилище <br> Matze Koch Rollen</div>
+                            <div class="card-price">
+                                <span class="price" id="price">13 490</span><span class="sale" id="sale"></span>
+                            </div>
+                            <div class="card-sale" id="card-sale">Выша выгода</div>
+                            <div class="card-button"><a href="#" class="card-button-link">в корзину</a></div>
+                        </div>
+                        <div class="card-sale-label">Скидка</div>
+                        <div class="card-hit">Хит</div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img"><img src="img/shad_jigging.png" alt=""></div>
+                        <div class="card-text">
+                            <div class="card-rating">*</div>
+                            <div class="card-desc">Приманка <br> Matze Koch Rollen</div>
+                            <div class="card-price">
+                                <span class="price" id="price">3 420</span><span class="sale" id="sale">6200</span>
+                            </div>
+                            <div class="card-sale" id="card-sale">Выша выгода 2 590 р.</div>
+                            <div class="benefit"></div>
+                            <div class="card-button"><a href="#" class="card-button-link">в корзину</a></div>
+                        </div>
+                        <div class="card-sale-label">Скидка</div>
+                        <div class="card-hit">Хит</div>
+                    </div>
+                    <div class="card">
+                        <div class="card-sale-label">Скидка</div>
+                        <div class="card-hit">Хит</div>
+                        <div class="card-img"><img src="img/matze.png" alt=""></div>
+                        <div class="card-text">
+                            <div class="card-rating">*</div>
+                            <div class="card-desc">Приманка <br>Matze Koch Rollen</div>
+                            <div class="card-price">
+                                <span class="price" id="price">13 490</span><span class="sale" id="sale"></span>
+                            </div>
+                            <div class="card-sale" id="card-sale">Выша выгода</div>
+                            <div class="card-button"><a href="#" class="card-button-link">в корзину</a></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="new-items">
+
+            </div>
+            <div class="last-news">
+
+            </div>
+            <div class="subscription">
+
+            </div>
+            <div class="sale">
+
+            </div>
+            <div class="about">
+
+            </div>
+        </div>
+
+        <div class="footer">
+<div class="footer-contaner">
+    <div class="footer-logo">
+        <h1>LOGOtype</h1>
+        <p>официаильный представитель <br> в России</p>
+        <div>
+            <a href="#">Скачать каталог</a><br>
+        <a href="#">Связаться с нами</a>
+        </div>
     </div>
+    <div class="company">
+        <h3 class="h3">Компаниям</h3>
+        <ul class="footer-menu">
+            <li class="footer-menu-item"><a href="#" class="footer-link">О компании</a></li>
+            <li class="footer-menu-item"><a href="#" class="footer-link">Акции</a></li>
+            <li class="footer-menu-item"><a href="#" class="footer-link">Новости</a></li>
+            <li class="footer-menu-item"><a href="#" class="footer-link">Блог</a></li>
+            <li class="footer-menu-item"><a href="#" class="footer-link">Эксперты</a></li>
+            <li class="footer-menu-item"><a href="#" class="footer-link">Контакты</a></li>
+        </ul>
+    </div>
+    <div class="buyers">
+        <h3 class="h3">Покупателям</h3>
+        <ul class="footer-menu">
+            <li class="footer-menu-item"><a href="#" class="footer-link">Каталог</a></li>
+            <li class="footer-menu-item"><a href="#" class="footer-link">Оплата</a></li>
+            <li class="footer-menu-item"><a href="#" class="footer-link">Доставка</a></li>
+            <li class="footer-menu-item"><a href="#" class="footer-link">Возврат</a></li>
+            <li class="footer-menu-item"><a href="#" class="footer-link">Помощь</a></li>
+        </ul>
+    </div>
+    <div class="wholesaler">
+        <h3 class="h3">Оптовикам</h3>
+        <p class="footer-phone">8 (800) 000-00-00</p>
+        <p class="footer-phone">8 (800) 000-00-00</p>
+        <p class="footer-phone">8 (800) 000-00-00</p>
+        <p class="footer-phone"><a href="mailto:info@mail.ru">info@mail.ru</a></p>
+    </div>
+    <div class="contacts">
+        <h3 class="h3">Контакты</h3>
+        <p class="footer-contact">г. Москва, ул. Иванова</p>
+        <p class="footer-contact">д. 5, пом. 8, оф. 11</p>
+        <p class="footer-contact">8 (800) 000-00-00</p>
+        <p class="footer-contact">8-800-000-00-00</p>
+        <p class="footer-contact"><a href="mailto:info@mail.ru">info@mail.ru</a></p>
+    </div>
+</div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
