@@ -1604,14 +1604,29 @@ hr {
   position: relative;
 }
 
-.card-rating .product-info__rating {
+.card-rating .review_stars_wrap {
+  position: relative;
+}
+
+.card-rating .review_stars_wrap .stars {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  font-size: 18px;
+  color: #feb909;
+  font-weight: 100;
+}
+
+.card-rating .review_stars_wrap .product-info__rating {
   width: 0;
   background-color: #feb909;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.card-rating .product-info__rating i:before {
+.card-rating .review_stars_wrap .product-info__rating i:before {
   font-family: 'Font Awesome 5 Free';
   font-size: 18px;
   font-style: normal;
