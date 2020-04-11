@@ -1604,6 +1604,14 @@ hr {
   position: relative;
 }
 
+.card-rating .like-link {
+  display: inline-block;
+  position: absolute;
+  right: -110%;
+  bottom: 0;
+  color: #3ac0ef;
+}
+
 .card-rating .review_stars_wrap {
   position: relative;
 }

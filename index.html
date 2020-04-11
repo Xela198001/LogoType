@@ -9,7 +9,7 @@
     <title>LOGOtype</title>
 </head>
 
-<body onload="sale();rating(); ">
+<body onload="sale();ratingfun(); ">
     <div class="contaner">
         <div class="header">
             <div class="header-top">
@@ -168,10 +168,12 @@
                                             class="far fa-star"></i><i class="far fa-star"></i><i
                                             class="far fa-star"></i>
                                     </div>
-                                    <div class="product-info__rating" data-rating="55">
+                                    <div class="product-info__rating" id="prod1" data-rating="0">
                                         <i></i><i></i><i></i><i></i><i></i>
                                     </div>
                                 </div>
+                                <a href="" class="like-link" onclick="return like('prod1')" title="like"><i
+                                        class="far fa-heart" id="like"></i></a>
                             </div>
                             <div class="card-desc">Удилище <br> Matze Koch Rollen</div>
                             <div class="card-price">
@@ -193,10 +195,12 @@
                                             class="far fa-star"></i><i class="far fa-star"></i><i
                                             class="far fa-star"></i>
                                     </div>
-                                    <div class="product-info__rating" data-rating="55">
+                                    <div class="product-info__rating" id='prod2' data-rating="55">
                                         <i></i><i></i><i></i><i></i><i></i>
                                     </div>
                                 </div>
+                                <a href="" class="like-link" onclick="return like('prod2')" title="like"><i
+                                        class="far fa-heart" id="like"></i></a>
                             </div>
                             <div class="card-desc">Приманка <br> Matze Koch Rollen</div>
                             <div class="card-price">
@@ -221,10 +225,11 @@
                                             class="far fa-star"></i><i class="far fa-star"></i><i
                                             class="far fa-star"></i>
                                     </div>
-                                    <div class="product-info__rating" data-rating="55">
+                                    <div class="product-info__rating" id="prod3" data-rating="55">
                                         <i></i><i></i><i></i><i></i><i></i>
                                     </div>
                                 </div>
+                                <a href="" class="like-link" onclick="return like('prod3')" title="like"><i class="far fa-heart" id="like" ></i></a>
                             </div>
                             <div class="card-desc">Приманка <br>Matze Koch Rollen</div>
                             <div class="card-price">
@@ -280,10 +285,11 @@
                                             class="far fa-star"></i><i class="far fa-star"></i><i
                                             class="far fa-star"></i>
                                     </div>
-                                    <div class="product-info__rating" data-rating="25">
+                                    <div class="product-info__rating" id="prod4" data-rating="25">
                                         <i></i><i></i><i></i><i></i><i></i>
                                     </div>
                                 </div>
+                                <a href="" class="like-link" onclick="return like('prod4')" title="like"><i class="far fa-heart" id="like" ></i></a>
                             </div>
                             <div class="card-desc">Катушка <br> Matze Koch Rollen</div>
                             <div class="card-price">
@@ -304,10 +310,11 @@
                                             class="far fa-star"></i><i class="far fa-star"></i><i
                                             class="far fa-star"></i>
                                     </div>
-                                    <div class="product-info__rating" data-rating="40">
+                                    <div class="product-info__rating" id="prod5" data-rating="40">
                                         <i></i><i></i><i></i><i></i><i></i>
                                     </div>
                                 </div>
+                                <a href="" class="like-link" onclick="return like('prod5')" title="like"><i class="far fa-heart" id="like" ></i></a>
                             </div>
                             <div class="card-desc">Подсачек <br> Matze Koch Rollen</div>
                             <div class="card-price">
@@ -330,10 +337,11 @@
                                             class="far fa-star"></i><i class="far fa-star"></i><i
                                             class="far fa-star"></i>
                                     </div>
-                                    <div class="product-info__rating" data-rating="55">
+                                    <div class="product-info__rating" id="prod6" data-rating="55">
                                         <i></i><i></i><i></i><i></i><i></i>
                                     </div>
                                 </div>
+                                <a href="" class="like-link" onclick="return like('prod6')" title="like"><i class="far fa-heart" id="like" ></i></a>
                             </div>
                             <div class="card-desc">Сумка рыболовная <br>Matze Koch Rollen</div>
                             <div class="card-price">

@@ -13,7 +13,7 @@ for (i = 0; i < sale.length; i++) {
 };
 }
 
-function rating() {
+function ratingfun() {
     var rating = document.querySelectorAll('.product-info__rating');
     var el = document.querySelectorAll('.card-rating');
     // var lbl = document.querySelectorAll('div.card-sale-label');
@@ -21,10 +21,17 @@ function rating() {
     for (i = 0; i < rating.length; i++) {
        dataRating = rating[i].getAttribute('data-rating');
        rating[i].style.width = dataRating+'%';
-
-       console.log(dataRating);
     
     };
+    // return false;
 }
 
-setInterval(rating, 10000);
+function like(e) {
+    var rating = document.getElementById(e);
+       var dataRating = rating.getAttribute('data-rating');
+        rating.setAttribute('data-rating', Number(dataRating) + 5);
+        ratingfun();
+        return false;
+}
+
+setInterval(ratingfun, 10000);
