@@ -1634,6 +1634,19 @@ hr {
     margin-bottom: 10px;
     position: relative;
 
+    .review_stars_wrap {
+        position: relative;
+
+        .stars {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            font-size: 18px;
+            color: #feb909;
+            font-weight: 100;
+        }
     .product-info__rating {
         width: 0;
         background-color: #feb909;
@@ -1650,4 +1663,5 @@ hr {
         // text-shadow: #feb909 1px 0,  #feb909 1px 1px,  #feb909 0 1px,  #feb909 -1px 0 ;
         color: #feb909 ;
     }
+}
 }

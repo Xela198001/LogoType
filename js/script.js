@@ -26,3 +26,5 @@ function rating() {
     
     };
 }
+
+setInterval(rating, 10000);
