@@ -11,7 +11,18 @@ for (i = 0; i < sale.length; i++) {
     };
 
 };
-console.log(div)
+}
 
+function rating() {
+    var rating = document.querySelectorAll('.product-info__rating');
+    var el = document.querySelectorAll('.card-rating');
+    // var lbl = document.querySelectorAll('div.card-sale-label');
+    var dataRating;
+    for (i = 0; i < rating.length; i++) {
+       dataRating = rating[i].getAttribute('data-rating');
+       rating[i].style.width = dataRating+'%';
 
+       console.log(dataRating);
+    
+    };
 }

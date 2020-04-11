@@ -369,6 +369,10 @@ body {
   margin-right: 27px;
 }
 
+.contaner .main .navigation .nav-left .menu .menu-item:hover {
+  background-color: #e4e4e4;
+}
+
 .contaner .main .navigation .slider-right {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -731,7 +735,7 @@ body {
 }
 
 .contaner .main .bestseller .cards .card .card-text .card-rating {
-  width: 100%;
+  width: 46%;
 }
 
 .contaner .main .bestseller .cards .card .card-text .card-desc {
@@ -991,7 +995,7 @@ body {
 }
 
 .new-items .cards .card .card-text .card-rating {
-  width: 100%;
+  width: 46%;
 }
 
 .new-items .cards .card .card-text .card-desc {
@@ -1594,39 +1598,25 @@ hr {
   z-index: -10;
 }
 
-.card-rating .review_stars_wrap {
-  overflow: hidden;
-}
-
-.card-rating #review_stars {
-  overflow: hidden;
+.card-rating {
+  width: 46%;
+  margin-bottom: 10px;
   position: relative;
-  float: left;
 }
 
-.card-rating #review_stars input {
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  z-index: 0;
+.card-rating .product-info__rating {
+  width: 0;
+  background-color: #feb909;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.card-rating #review_stars input ~ label i {
-  color: #ccc;
-}
-
-.card-rating #review_stars input:checked ~ label i {
-  color: #ec9801;
-}
-
-.card-rating #review_stars label {
-  float: right;
-  cursor: pointer;
-  position: relative;
-  z-index: 1;
-}
-
-.card-rating #review_stars label:hover i, .card-rating #review_stars label:hover ~ label i {
-  color: #ec9801;
+.card-rating .product-info__rating i:before {
+  font-family: 'Font Awesome 5 Free';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  content: "\f005";
+  color: #feb909;
 }
 /*# sourceMappingURL=style.css.map */
